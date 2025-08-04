@@ -1,0 +1,6 @@
+-- Active: 1751542958202@@127.0.0.1@5432@swiftnotes
+CREATE TABLE notes (
+    note_id SERIAL PRIMARY KEY,
+    content TEXT NOT NULL,
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
+);
